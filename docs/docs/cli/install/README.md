@@ -18,7 +18,7 @@ Download the [CLI build](#cli-builds) for your architecture below. Unzip that ar
 
 ## Windows (native)
 
-[Download the CLI build for Windows](https://cli.pipedream.com/windows/amd64/latest/pd.zip). Unzip that archive, and run `pd.exe` in a terminal that supports ANSI colors, like the [Windows Terminal](https://github.com/microsoft/terminal).
+[Download the CLI build for Windows](https://cli.pipedream.com/windows/amd64/latest/pd.zip). Unzip that archive, save `pd.exe` in Program Files, and [add its file path to `Path` in your system environment variables](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). Use `pd.exe` in a terminal that supports ANSI colors, like the [Windows Terminal](https://github.com/microsoft/terminal).
 
 ## Windows (WSL)
 

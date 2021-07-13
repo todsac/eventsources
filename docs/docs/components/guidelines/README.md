@@ -203,7 +203,7 @@ module.exports = {
 When publishing components to the Pipedream registry, the `key` must be unique
 across registry components and should follow the pattern:
 
-`app-name-slug`-`slugified-component-name`
+`app_name_slug`-`slugified-component-name`
 
 #### Folder Structure
 
@@ -212,14 +212,14 @@ Registry components are organized by app in the `components` directory of the
 
 ```text
 /components
- /[app_name_slug]
-  /[app_name_slug].app.js
+ /[app-name-slug]
+  /[app-name-slug].app.js
   /actions
-   /[action_name_slug]
-    /[action_name_slug].js
+   /[action-name-slug]
+    /[action-name-slug].js
   /sources
-   /[source_name_slug]
-    /[source_name_slug].js
+   /[source-name-slug]
+    /[source-name-slug].js
 ```
 
 - The name of each app folder corresponds with the name slug for each app
@@ -258,8 +258,8 @@ out](https://pipedream.com/community/c/dev/11).
 
 ##### Prop Definitions
 
-Whenever possible, reuse existing [prop
-definitions](https://github.com/PipedreamHQ/pipedream/blob/master/COMPONENT-API.md#prop-definitions-example).
+Whenever possible, reuse existing [prop definitions](../api/#prop-definitions-example).
+
 If a prop definition does not exist and you are adding an app-specific prop that
 may be reused in future components, add it as a prop definition to the app file.
 Prop definitions will also be surfaced for apps the Pipedream marketplace.
@@ -267,7 +267,7 @@ Prop definitions will also be surfaced for apps the Pipedream marketplace.
 ##### Methods
 
 Whenever possible, reuse
-[methods](https://github.com/PipedreamHQ/pipedream/blob/master/COMPONENT-API.md#methods)
+[methods](../api/#methods)
 defined in the app file. If you need to use an API for which a method is not
 defined and it may be used in future components, define a new method in the app
 file.
@@ -344,7 +344,7 @@ approach, the general pattern is:
   etc) and potentially redefining any inherited methods.
 
 See [Google
-Drive](https://github.com/pipedreamhq/pipedream/components/google_drive) for an
+Drive](https://github.com/PipedreamHQ/pipedream/tree/master/components/google_drive) for an
 example of this pattern. When using this approach, prop definitions should still
 be maintained in the app file.
 
@@ -373,13 +373,13 @@ Examples:
 - The async option to select an Airtable Base is self-explanatory so includes no
   description:
 
-  ![image-20210326151557417](images/image-20210326151557417.png)
+  ![image-20210326151557417](https://github.com/PipedreamHQ/pipedream/blob/016d65fef1ed307be4a38bff058375ab5a70c461/images/image-20210326151557417.png)
 
 - The “Search Term” prop for Twitter includes a description that helps the user
   understand what values they can enter, with specific values highlighted using
   backticks and links to external content.
 
-  ![image-20210326151706682](images/image-20210326151706682.png)
+  ![image-20210326151706682](https://github.com/PipedreamHQ/pipedream/blob/016d65fef1ed307be4a38bff058375ab5a70c461/images/image-20210326151706682.png)
 
 #### Optional vs Required Props
 
@@ -391,7 +391,7 @@ connect their account and enter a search term. The remaining fields are optional
 for users who want to filter the results, but they do not require any action to
 activate the source:
 
-![image-20210326151930885](images/image-20210326151930885.png)
+![image-20210326151930885](https://github.com/PipedreamHQ/pipedream/blob/016d65fef1ed307be4a38bff058375ab5a70c461/images/image-20210326151930885.png)
 
 #### Default Values
 
